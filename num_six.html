@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/num_six.css">
+    </head>
+    <body>
+        <h1 style="text-align: center; font-size: 80px; color: rgb(41, 47, 58);">My Form</h1>
+        <form id="form" onsubmit="return validateForm2()">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit" style="background-color: rgb(100, 210, 237); font-size: large; font-weight: bolder;">Submit</button>
+            
+        </form>
+          
+          <script>
+          function validateForm2() {
+            if (document.getElementById("email").value === "" ||
+                document.getElementById("name").value === "" ||
+                document.getElementById("password").value === "") {
+              alert("Please fill in all values.");
+            return false;
+            }
+            return true; 
+          }
+          </script>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
