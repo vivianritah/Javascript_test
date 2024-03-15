@@ -1,4 +1,4 @@
-
+// an object to store info
 class Star {
     constructor(name, country, age) {
         this.name = name;
@@ -20,12 +20,12 @@ class Movie {
     }
 }
 
-// Create a star 
+
 const starInfo = new Star("Puff", "Uganda", 45);
 
-// Create a movie 
+ 
 const myFavoriteMovie = new Movie("Puff the Magic Dragon", 30, starInfo);
 
-// Log movie information
+
 myFavoriteMovie.logMovieInfo();
 
